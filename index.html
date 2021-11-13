@@ -9,41 +9,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap,Baloo+Chettan+2:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap,Baloo+Chettan+2:wght@400;600&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
-      <!-- ============= Header =========== -->
 
-      <header class="header">
-          <div class="hero">
-              <h1 class="title">
-                  Food For Health
-              </h1>
-              <a href="#" class="hero-button pulsate">Book Now</a>
-          </div>
-      </header>
+    <!--============== navbar ================ -->
 
-      <!-- ============ About us ============== -->
+    <div id="menu" class="menu">
+        <div id="menu-bar" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+            <ul id="nav" class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-      <section id="about">
-          <div>
-              <h2 class="title-text">About Us</h2>
-          </div>
-          <div class="about-center">
-              <!--======== article ============  -->
-              <article class="about">
-                  <div class="about-icon">
-                      <i class="fas fa-mug-hot"></i>
-                  </div>
-                  <div class="about-text">
-                      <h2 class="about-subtitle">Drinks</h2>
-                      <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, non!</p>
-                  </div>
-              </article>
+    <!-- ============= Header =========== -->
 
-              <article class="about">
+    <header class="header">
+        <div class="hero">
+            <h1 class="title">
+                Food For Health
+            </h1>
+            <a href="#" class="hero-button pulsate">Book Now</a>
+        </div>
+    </header>
+
+    <!-- ============ About us ============== -->
+
+    <section id="about">
+        <div>
+            <h2 class="title-text">About Us</h2>
+        </div>
+        <div class="about-center">
+            <!--======== article ============  -->
+            <article class="about">
+                <div class="about-icon">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <div class="about-text">
+                    <h2 class="about-subtitle">Drinks</h2>
+                    <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, non!</p>
+                </div>
+            </article>
+
+            <article class="about">
                 <div class="about-icon">
                     <i class="fas fa-utensils"></i>
                 </div>
@@ -92,21 +112,187 @@
                     <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, non!</p>
                 </div>
             </article>
-          </div>
-      </section>
+        </div>
+    </section>
 
-      <!-- =========== menu section ============ -->
+    <!-- =========== menu section ============ -->
 
-      <section class="menu" id="menu">
-          <article class="menu-image"></article>
-          <article class="menu-text">
-              <div class="menu-text-center">
-                  <h1>Our Menu</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus maiores rerum tempora, totam tenetur. Molestias facilis exercitationem aspernatur mollitia placeat!</p>
-                  <a href="#">Explore</a>
-              </div>
-          </article>
-      </section>
+    <section class="menu" id="menu">
+        <article class="menu-image"></article>
+        <article class="menu-text">
+            <div class="menu-text-center">
+                <h1>Our Menu</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus maiores rerum tempora,
+                    totam tenetur. Molestias facilis exercitationem aspernatur mollitia placeat!</p>
+                <a href="#">Explore</a>
+            </div>
+        </article>
+    </section>
+    <!-- ========== social icon ========= -->
+
+    <section id="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus"></i></a>
+    </section>
+
+    <!--========== numbers ============  -->
+
+    <section id="numbers">
+        <article class="number">
+            <i class="fas fa-cloud-meatball"></i>
+            <p>50</p>
+            <h3>Meat Dishes</h3>
+        </article>
+
+        <article class="number">
+            <i class="fas fa-cheese"></i>
+            <p>35</p>
+            <h3>Cheese Dishes</h3>
+        </article>
+
+        <article class="number">
+            <i class="fas fa-pizza-slice"></i>
+            <p>25</p>
+            <h3>Pizzas</h3>
+        </article>
+
+        <article class="number">
+            <i class="fas fa-ice-cream"></i>
+            <p>50</p>
+            <h3>Desserts</h3>
+        </article>
+
+    </section>
+
+    <!-- ========== Card section =========== -->
+
+    <section id="food">
+        <div>
+            <h2 class="title-text">Food Fusion</h2>
+        </div>
+        <div class="food-container">
+            <article class="food-card">
+                <img src="images/beefburger.jpg" class="food-img" alt="">
+                <div class="img-text">
+                    <h1>Breakfast</h1>
+                </div>
+                <div class="img-footer">
+                    <div class="footer-icon">
+                        <i class="fas fa-dollar-sign">25</i>
+                    </div>
+                    <div class="footer-button">
+                        <button type="button" class="food-btn">Order Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="images/fish.jpg" class="food-img" alt="">
+                <div class="img-text">
+                    <h1>Lunch</h1>
+                </div>
+                <div class="img-footer">
+                    <div class="footer-icon">
+                        <i class="fas fa-dollar-sign">35</i>
+                    </div>
+                    <div class="footer-button">
+                        <button type="button" class="food-btn">Order Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="images/choclate.jpg" class="food-img" alt="">
+                <div class="img-text">
+                    <h1>Dinner</h1>
+                </div>
+                <div class="img-footer">
+                    <div class="footer-icon">
+                        <i class="fas fa-dollar-sign">30</i>
+                    </div>
+                    <div class="footer-button">
+                        <button type="button" class="food-btn">Order Now</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========= Gallery =========== -->
+
+    <section id="gallery">
+        <div>
+            <h2 class="title-text">Main Cuisines</h2>
+        </div>
+        <div id="gallery-center">
+            <article class="gallery-item">
+                <a href="images/tomatoburger.jpg">
+                    <img src="images/tomatoburger.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/burger.jpg">
+                    <img src="images/burger.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/cuttingveg.jpg">
+                    <img src="images/cuttingveg.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/leafball.jpg">
+                    <img src="images/leafball.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/leafmeat.jpg">
+                    <img src="images/leafmeat.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/noodles.jpg">
+                    <img src="images/noodles.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/thaisoup.jpg">
+                    <img src="images/thaisoup.jpg" alt="">
+                </a>
+            </article>
+
+            <article class="gallery-item">
+                <a href="images/strawberry.jpg">
+                    <img src="images/strawberry.jpg" alt="">
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- =========== footer ========== -->
+    <footer class="footer">
+        <div class="section-center">
+            <p class="text">
+                &copy; <span>Food  For  Health</span>
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        function onClickMenu() {
+            document.getElementById('menu-bar').classList.toggle('change');
+            document.getElementById('nav').classList.toggle('change-btn');
+        }
+    </script>
 </body>
 
 </html>
