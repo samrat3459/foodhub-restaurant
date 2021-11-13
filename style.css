@@ -142,7 +142,7 @@ body {
     color: #000;
 }
 
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
     0% {
         opacity: 0.3;
     }
